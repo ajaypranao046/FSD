@@ -1,0 +1,416 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  border-top:  solid white;
+  /* border-bottom: 1px solid white; */
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  background-color: black;
+
+  font-size: 16px;
+}
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  background-color: white;
+}
+body {
+  margin: 0px;
+  background-color: black;
+  color: white;
+  
+  
+}
+.contactFixed {
+  position: fixed;
+  right: 0%;
+  bottom: 200px;
+  padding: 24px 16px;
+  border: 1px solid white;
+  border-radius: 16px 0px 0px 16px;
+  cursor: grab;
+  z-index: 10000;
+}
+.contactFixed:hover {
+  background-color: white;
+  color: black;
+
+  padding: 24px 24px;
+  border-radius: 16px 0px 0px 16px;
+}
+/* .offerHead {
+  text-shadow: purple;
+  border-bottom: 1px solid white;
+} */
+
+.nav-ul {
+  list-style: none;
+  padding-bottom: 1px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 16px 32px;
+  border-radius: 8px; /* Curved edges */
+  margin: 0 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: grey; /* Highlight background color on hover */
+  color: white; /* Text color on hover */
+  border-color: black; /* Border color on hover */
+}
+
+
+/* .nav-ul {
+  list-style: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+.nav-ul a {
+  text-decoration: none;
+  color: black;
+}
+.nav-item {
+  display: inline;
+  border: 1px;
+  border-color: black;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+} */
+.photo{
+  width: max-content;
+  height: screen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  /* border-radius: 100%; */
+}
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.between{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-logo {
+  position: absolute;
+  left: -2%; /* Adjust this value to position the logo correctly */
+  width: 1px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+/* .nav-logo {
+  color: black;
+  position: absolute;
+  left: -1%;
+} */
+.logout{
+  color: black;
+  position: absolute;
+  right: 10%;
+}
+
+/* Base styles for form elements */
+.LoginForm label,
+.AdminlogForm label,
+.leftform label,
+.LoginForm input,
+.AdminlogForm input,
+.leftform input,
+.LoginForm button,
+.AdminlogForm button,
+.leftform button {
+  display: block;
+  margin-bottom: 10px; 
+  margin-top: 10px;
+  justify-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, clean font */
+  color: black; /* Set text color to black */
+}
+
+/* Container styles */
+.FormContainer,
+.AdminlogContainer {
+  width: 350px; /* Slightly larger for a more comfortable feel */
+  height: auto; /* Auto height to accommodate content */
+  border: 1px solid #ccc; /* Light gray border for a softer look */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  background-color: #fff; /* White background for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Padding inside the container */
+  margin: 40px auto; /* Centered and with more space from top */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-items: center;
+  color: black; /* Set text color to black */
+}
+
+/* Header styles */
+#headerAdmin {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white; /* Darker text color for better readability */
+}
+
+/* Left and right section styles */
+.left-section,
+.right-section {
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 24px;
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  color: black; /* Set text color to black */
+}
+
+/* Container for left and right sections */
+.LEFT-RIGHTcontainer {
+  display: flex;
+  gap: 20px; /* Use gap for spacing between flex items */
+  margin: 40px auto; /* Centered and with more space from top */
+  max-width: 800px; /* Max width for better control */
+}
+
+/* Styles for left section */
+.left-section {
+  flex: 1;
+  margin-right: 20px; /* Add margin between sections */
+  background-color: #f5f5f5; /* Light grey background */
+}
+
+/* Styles for right section */
+.right-section {
+  flex: 1;
+}
+
+/* Form styles inside the right section */
+.right-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-section form input {
+  width: 100%; /* Full width for inputs */
+  padding: 10px; /* Padding for better spacing */
+  margin-bottom: 10px; /* Spacing between inputs */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  color: black; /* Set text color to black */
+}
+
+.right-section form button {
+  width: 100%; /* Full width for button */
+  padding: 10px; /* Padding for better spacing */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  font-size: 1em; /* Larger text size */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.right-section form button:hover {
+  background-color: #555; /* Slightly lighter background on hover */
+}
+
+/* Additional form container styles for left section if needed */
+.left-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-section form input {
+  width: 100%; /* Full width for inputs */
+  padding: 10px; /* Padding for better spacing */
+  margin-bottom: 10px; /* Spacing between inputs */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  color: black; /* Set text color to black */
+}
+
+.left-section form button {
+  width: 100%; /* Full width for button */
+  padding: 10px; /* Padding for better spacing */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  font-size: 1em; /* Larger text size */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.left-section form button:hover {
+  background-color: #555; /* Slightly lighter background on hover */
+}
+
+
+/* .LoginForm label,
+.AdminlogForm label,
+.leftform label,
+.LoginForm input,
+.AdminlogForm input,
+.leftform input,
+.LoginForm button,
+.AdminlogForm button,
+.leftform button {
+  display: block;
+  margin-bottom: 10px; 
+  margin-top: 10px;
+  align-items: center;
+  justify-items: center;
+}
+.FormContainer,
+.AdminlogContainer {
+  width: 300px;
+  height: 300px;
+  border: 1px solid white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;;
+  justify-items: center;
+}
+.FormContainer >*{
+  margin-bottom: 100px; 
+}
+#headerAdmin {
+  text-align: center;
+}
+.left-section {
+  border: 1px solid white;
+  width: 200px;
+  padding: 24px;
+}
+.right-section {
+  border: 1px solid white;
+  width: 200px;
+  padding: 24px;
+}
+.LEFT-RIGHTcontainer {
+  display: flex;
+}
+
+.left-section {
+  flex: 1;
+  margin-right: 20px; 
+}
+
+.right-section {
+  flex: 1;
+}
+
+
+.right-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-section form input {
+  width: 200px;
+  margin-bottom: 10px; 
+
+.right-section form button {
+  width: 100px; 
+} */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjusts columns to fit the available space */
+  gap: 20px; /* Space between cards */
+  padding: 10px; /* Optional padding around the grid container */
+}
+
+.card {
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white; /* Background color for better visibility */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for better aesthetics */
+}
+
+.img-container img {
+  max-width: 100%;
+  max-height: 200px;
+  display: block;
+  margin-bottom: 10px; /* Space between the image and other content */
+}
+
+
+/* .card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 0 calc(33.33% - 20px); Adjust width to fit three cards per row
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+
+
+.img-container img {
+  max-width: 100%;
+  max-height: 200px;
+  margin-right: 20px;
+} */
+
+.cross{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
